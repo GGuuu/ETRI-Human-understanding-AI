@@ -1,9 +1,6 @@
 # ETRI-Human-understanding-AI
 
 
-# Model Architecture
-
-
 # Requirements
 ```
 torch==
@@ -15,7 +12,7 @@ scipy==1.13.0
 
 # 폴더 구성
 원활한 실행을 위해 아래와 같은 구조의 폴더 구조로 만들어놓아야 함
-`+-- \[디렉토리\]` 형태는 디렉토리 이름을 의미하고, `- 파일명`은 해당 디렉토리에 포함된 파일을 의미함
+`+-- [디렉토리]` 형태는 디렉토리 이름을 의미하고, `- 파일명`은 해당 디렉토리에 포함된 파일을 의미함
 ```
 +-- [데이터 전처리]
   - Train 데이터 전처리.ipynb
@@ -61,9 +58,8 @@ test.py
 train.py
 ```
 
-
 # Dataset
-ETRI 나눔 데이터
+[ETRI 나눔 데이터](https://nanum.etri.re.kr/share/schung1/ETRILifelogDataset2020?lang=ko_KR)
 
 
 # How to use
