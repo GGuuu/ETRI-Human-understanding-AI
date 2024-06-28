@@ -18,7 +18,7 @@ scipy==1.13.0
   - Train 데이터 전처리.ipynb
   - Valid 데이터 전처리.ipynb
   - Test 데이터 전처리.ipynb
-+-- [ETRI_dataset]
++-- [ETRI_data]
   +-- [user01-06] # ETRI 나눔에서 다운받은 train 데이터
   +-- [user07-10]
   +-- [user11-12]
