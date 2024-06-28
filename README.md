@@ -59,12 +59,13 @@ train.py
 ```
 
 # Dataset
-[ETRI 나눔 데이터](https://nanum.etri.re.kr/share/schung1/ETRILifelogDataset2020?lang=ko_KR)
-
+ - [ETRI 나눔 데이터](https://nanum.etri.re.kr/share/schung1/ETRILifelogDataset2020?lang=ko_KR)
+   - Validation, Test 데이터셋
+   - Train 및 Validation 데이터 라벨 데이터
+ - [ETRI 휴먼이해 인공지능 논문경진대회](https://aifactory.space/task/2790/overview) 제공 데이터
+   - 2020년 라이프로그 데이터셋
 
 # How to use
 ## 1) 
-## 2)
+## 2) 
 
-
-# Results
