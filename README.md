@@ -3,7 +3,7 @@
 
 # Requirements
 ```
-torch==
+torch==2.1.0+cu118
 pyarrow==9.0.0
 pandas==1.5.3
 numpy==1.23.5
@@ -66,6 +66,6 @@ train.py
    - 2020년 라이프로그 데이터셋
 
 # How to use
-## 1) 
-## 2) 
+## 1) 데이터 전처리 코드를 순서대로 실행
+## 2) main.py 파일 실행하여 모델 학습 및 테스트
 
