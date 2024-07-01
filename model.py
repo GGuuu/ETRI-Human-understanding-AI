@@ -106,22 +106,6 @@ class Act(nn.Module):
         return out
 
 
-# fusion model 선언
-class FusionModel(nn.Module):
-    def __init__(self, num_units):
-        super().__init__()
-        self.fusion = nn.Sequential(nn.Conv1d(num_units, num_units // 2, 1, 1),
-                                    nn.BatchNorm1d(num_units // 2),
-                                    nn.ReLU(),
-                                    nn.Conv1d(num_units // 2, num_units // 10, 1, 1),
-                                    nn.BatchNorm1d(num_units // 10),
-                                    nn.ReLU(),
-                                    nn.Conv1d(num_units // 10, num_units, 1, 1))
-
-    def forward(self, x):
-        out = self.fusion(x)
-        return out
-
 
 # prediction model 선언
 class PredModel(nn.Module):
@@ -157,7 +141,13 @@ class BasicModel(nn.Module):
         self.ca = ChannelAttention(num_units)
         self.sa = SpatialAttention()
 
-        self.fusion = FusionModel(num_units)
+        self.fusion =  nn.Sequential(nn.Conv1d(num_units, num_units // 2, 1, 1),
+                                    nn.BatchNorm1d(num_units // 2),
+                                    nn.ReLU(),
+                                    nn.Conv1d(num_units // 2, num_units // 10, 1, 1),
+                                    nn.BatchNorm1d(num_units // 10),
+                                    nn.ReLU(),
+                                    nn.Conv1d(num_units // 10, num_units, 1, 1))
         self.cnn = nn.Conv1d(200, 1, 1)
 
         self.pred_model = PredModel(num_units)
